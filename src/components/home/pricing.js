@@ -50,9 +50,7 @@ function AppPricing() {
       <div className="container-fluid">
         <div className="titleHolder">
           <h2>Choisissez un plan qui correspond à vos besoins</h2>
-          <p>
-            Debitis itaque minima dolorum fuga aperiam inventore, quidem enim
-          </p>
+          <p>Il existe un plan sur mesure pour chacun de vos besoins.</p>
         </div>
         <List
           grid={{

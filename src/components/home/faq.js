@@ -11,17 +11,20 @@ function AppFaq() {
         <div className="titleHolder">
           <h2>Foire aux questions</h2>
           <p>
-            Quidem reiciendis iure, aperiam blanditiis. Alias esse, nam, ea quam
+            Voici quelques-unes des questions qui nous sont le plus fréquemment
+            posées
           </p>
         </div>
         <Collapse defaultActiveKey={["1"]}>
-          <Panel header="How to setup the theme?" key="1">
+          <Panel
+            header="Puis-je modifier ou annuler mon plan à tout moment?"
+            key="1"
+          >
             <p>
-              Ut per tempor latine fuisset, cu quod posidonium vix. Mei cu erant
-              bonorum, te ius vide maiorum hendrerit. In alii instructior vix,
-              vis et elit maluisset, usu recusabo atomorum ut. Nibh diceret
-              dolores vix et, id omnis adhuc maiestatis vim, ei mel legendos
-              mnesarchum argumentum. Semper nusquam urbanitas sea te.
+              Chez MasterNET, nous faisons pleinement confiance à nos clients,
+              c'est pourquoi si vous n'êtes pas satisfait du plan actuel et que
+              vous décidez de le changer pour un autre ou de l'annuler, vous
+              pouvez le faire à tout moment sans frais.
             </p>
           </Panel>
           <Panel header="Can I change plan or cancel at any time?" key="2">
@@ -72,12 +75,10 @@ function AppFaq() {
           </Panel>
         </Collapse>
         <div className="quickSupport">
-          <h3>Voulez-vous un soutien rapide?</h3>
+          <h2>Voulez-vous un soutien rapide?</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
-            velit necessitatibus praesentium aliquid eos in neque recusandae,
-            incidunt esse dolore voluptatum nesciunt quod soluta consequuntur
-            voluptatibus ab excepturi nobis! Porro!
+            N'hésitez pas à nous contacter pour répondre à toutes vos questions
+            et vous fournir rapidement des conseils adaptés à vos besoins.
           </p>
           <Button type="primary" size="large">
             <i className="fas fa-envelope"></i> Envoyez votre question par

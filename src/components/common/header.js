@@ -27,7 +27,6 @@ function AppHeader() {
             <Link href="#hero" title="Page d'accueil" />
             <Link href="#about" title="A propos de nous" />
             <Link href="#feature" title="Caractéristiques" />
-            <Link href="#works" title="Comment cela fonctionne" />
             <Link href="#faq" title="FAQ" />
             <Link href="#pricing" title="Tarification" />
             <Link href="#contact" title="Contact" />
@@ -47,7 +46,6 @@ function AppHeader() {
               <Link href="#hero" title="Page d'accueil" />
               <Link href="#about" title="A propos de nous" />
               <Link href="#feature" title="Caractéristiques" />
-              <Link href="#works" title="Comment cela fonctionne" />
               <Link href="#faq" title="FAQ" />
               <Link href="#pricing" title="Tarification" />
               <Link href="#contact" title="Contact" />
