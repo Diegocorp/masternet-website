@@ -4,41 +4,41 @@ import { List, Card, Button } from "antd";
 
 const data = [
   {
-    title: "Basic",
+    title: "Design",
     content: [
       {
-        price: "£29.99",
-        space: "1 GB of space",
-        user: "1 user",
-        support: "24/7 support",
-        backup: "Safe, reliable backup",
-        access: "Access from anywhere",
+        price: "€199.99",
+        space: "Conseil 24/7",
+        user: "Assistance technique 24/7",
+        support: "Conception de réseaux internet sur mesure",
+        backup: "",
+        access: "",
       },
     ],
   },
   {
-    title: "Premium",
+    title: "Installation",
     content: [
       {
-        price: "£59.99",
-        space: "5 GB of space",
-        user: "5 users",
-        support: "24/7 support",
-        backup: "Safe, reliable backup",
-        access: "Access from anywhere",
+        price: "€399.99",
+        space: "Conseil 24/7",
+        user: "Assistance technique 24/7",
+        support: "Conception de réseaux internet sur mesure",
+        backup: "Installation et mise en service",
+        access: "",
       },
     ],
   },
   {
-    title: "Enterprise",
+    title: "Administration",
     content: [
       {
-        price: "£99.99",
-        space: "Unlimited space",
-        user: "15 users",
-        support: "24/7 support",
-        backup: "Safe, reliable backup",
-        access: "Access from anywhere",
+        price: "€699.99",
+        space: "Conseil 24/7",
+        user: "Assistance technique 24/7",
+        support: "Conception de réseaux internet sur mesure",
+        backup: "Installation et mise en service",
+        access: "Administration et contrôle",
       },
     ],
   },
@@ -72,9 +72,6 @@ function AppPricing() {
                 <p>{item.content[0].support}</p>
                 <p>{item.content[0].backup}</p>
                 <p>{item.content[0].access}</p>
-                <Button type="primary" size="large">
-                  <i className="fab fa-telegram-plane"></i> Get Started
-                </Button>
               </Card>
             </List.Item>
           )}
