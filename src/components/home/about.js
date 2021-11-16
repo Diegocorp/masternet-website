@@ -15,7 +15,7 @@ const items = [
     icon: <i className="fas fa-desktop"></i>,
     title: "Conseil en réseau",
     content:
-      "Nous fournissons des conseils sur tout ce qui concerne la conception, l'installation, la mise en œuvre et l'administration des réseaux.",
+      "Nous fournissons des  conseils sur tout ce qui concerne la conception, l'installation, la mise en œuvre et l'administration des réseaux.",
   },
   {
     key: "3",
