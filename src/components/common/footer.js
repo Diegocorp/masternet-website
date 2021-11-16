@@ -11,7 +11,9 @@ function AppFooter() {
         </div>
         <div className="developedBy">
           Développé par{" "}
-          <a href="https://diegocorp.github.io/">Diego Sandoval </a>
+          <a target="_blank" href="https://www.diegosandoval.tech/">
+            Diego Sandoval
+          </a>
           <a href="https://github.com/Diegocorp">
             <i class="fab fa-github-square"></i>
           </a>

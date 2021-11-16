@@ -1,9 +1,13 @@
 import React from "react";
-
+import { useForm, ValidationError } from "@formspree/react";
 import { Form, Input, Button, Checkbox } from "antd";
 const { TextArea } = Input;
 
 function AppContact() {
+  const [state, handleSubmit] = useForm("mknkpqvy");
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
   return (
     <div id="contact" className="block contactBlock">
       <div className="container-fluid">
@@ -15,6 +19,7 @@ function AppContact() {
           name="normal_login"
           className="login-form"
           initialValues={{ remember: true }}
+          onSubmit={handleSubmit}
         >
           <Form.Item
             name="fullname"
@@ -25,7 +30,12 @@ function AppContact() {
               },
             ]}
           >
-            <Input placeholder="Nom complet" />
+            <Input
+              id="name"
+              type="name"
+              name="name"
+              placeholder="Nom complet"
+            />
           </Form.Item>
           <Form.Item
             name="email"
@@ -40,7 +50,17 @@ function AppContact() {
               },
             ]}
           >
-            <Input placeholder="Adresse e-mail" />
+            <Input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Adresse e-mail"
+            />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
           </Form.Item>
           <Form.Item name="telephone">
             <Input placeholder="Téléphone" />
@@ -49,7 +69,12 @@ function AppContact() {
             <Input placeholder="Sujet" />
           </Form.Item>
           <Form.Item name="message">
-            <TextArea placeholder="Message" />
+            <TextArea id="message" name="message" placeholder="Message" />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
           </Form.Item>
           <Form.Item>
             <Form.Item
@@ -70,8 +95,8 @@ function AppContact() {
           </Form.Item>
           <Form.Item>
             <Button
-              type="primary"
-              htmlType="submit"
+              type="submit"
+              disabled={state.submitting}
               className="login-form-button"
             >
               Soumettre
